@@ -1,3 +1,2 @@
 scrapy
-selenium
-webdriver-manager
+playwright

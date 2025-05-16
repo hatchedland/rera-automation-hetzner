@@ -10,6 +10,8 @@ log_with_timestamp() {
 log_with_timestamp "Starting RERA data processing pipeline"
 
 log_with_timestamp "Scraping actionids"
+touch './utils/actionid.json'
+echo '{}' > ./utils/actionid.json
 python actionid-1.py
 
 log_with_timestamp "Converting actionids to csv"
